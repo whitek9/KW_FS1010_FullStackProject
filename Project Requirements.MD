@@ -22,8 +22,8 @@ Reference any documentation you find to create a React Router - [here is a simpl
 
 3.  a) Add a new page for your React application, which upon a successful submission to your login     route ( `POST /auth` ), the token received will be used to gain access to protected pages in React. Error messages should be displayed appropriately on screen. 
 
-    b) Add a new page, which can only be accessed by a valid JWT, which leverages the GET /contact_form/entries endpoint to display all submissions. This page should be stylized appropriately. This page can be accessible through the login page. If a valid JWT is not available, or no token is set, then user should be redirected to the Login page from step 2. 
+    b) Add a new page, which can only be accessed by a valid JWT, which leverages the `GET /contact_form/entries` endpoint to display all submissions. This page should be stylized appropriately. This page can be accessible through the login page. If a valid JWT is not available, or no token is set, then user should be redirected to the Login page from step 2. 
 
 *Bonus*: 
 
-4. In your protected area, add a new page which has a single form that allows to make a request to POST /users to create new users. ––>
+4. In your protected area, add a new page which has a single form that allows to make a request to POST /users to create new users.
