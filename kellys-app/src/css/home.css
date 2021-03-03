@@ -1,0 +1,28 @@
+.homeTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    width: 100%;
+    min-height: 90vh;
+    background-image: url("../images/homeImages/LookingOverHorseshoeBend.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.homeNavigation ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+}
+.homeNavigation ul li {
+    display: inline;
+}
+.homeNavigation ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+.homeNavigation ul li a:hover {
+    background-color: #7e7373b7;
+}

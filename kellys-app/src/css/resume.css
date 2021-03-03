@@ -1,0 +1,14 @@
+.experienceList {
+    max-width: 600px;
+    text-align: left;
+    font-size: 12pt;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.experienceList li {
+    max-width: 600px;
+    text-align: left;
+    padding-bottom: 30px;
+    font-size: 12pt;
+}

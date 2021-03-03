@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.formLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+}
+
+.formLeft input {
+    margin-bottom: 20px;
+}
+
+.formLeft select {
+    margin-bottom: 20px;
+}
+
+.formLeft textarea {
+    margin-bottom: 20px;
+}
+
+.textAreaFormatted {
+    font-family: 'Inter', sans-serif;
+}

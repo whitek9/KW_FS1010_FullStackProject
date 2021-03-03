@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+header {
+  background-image: url("./images/homeImages/StandingOverHorseshoeBend.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inPageNav ul {
+  text-align: center;
+  list-style-type: none;
+  padding-top: 20px;
+}
+
+.inPageNav ul li {
+  display: inline;
+}
+
+.inPageNav ul li a {
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.inPageNav ul li a:hover {
+  background-color:#ffffff8f;
+  color: #539ef3;
+}
+
+.navigation ul {
+  align-content: flex-end;
+  text-align: right;
+  list-style-type: none;
+  padding-right: 35px;
+}
+
+.navigation ul li {
+  display: inline;
+}
+
+.navigation ul li a {
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.navigation ul li a:hover {
+  background-color:#ffffff8f;
+  color: #539ef3;
+}
+
+footer {
+  background-color:#7e7373;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 20px;
+}
+
+footer ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 400;
+  color: black;
+  padding: 10px 20px 10px 20px;
+}
+
+footer ul li a:hover {
+  color: white;
+}
+
+.copyright {
+  color: #413c3c;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 60px;
+  font-weight: 200;
+  background-color: #7e7373b7; 
+}
+
+h2 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 45px;
+}
+
+h3 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 30px;
+  color: white;
+  padding-left: 50px;
+}
+
+h3 a {
+  text-decoration: none;
+  color: white;
+}
+
+h4 {
+  font-family:inherit;
+  font-weight: 200;
+  font-size: 35px;
+  margin: 0;
+  padding: 20px;
+  padding-bottom: 20;
+  text-align: center;
+}
+
+h5 {
+  display: flex;
+  align-items: center;
+  font-family:inherit;
+  font-weight: 200;
+  font-size: 25px;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.h5Left {
+  font-family:inherit;
+  font-weight: 200;
+  font-size: 25px;
+  padding-top: 20px;
+  padding: 5px;
+}
+
+p {
+  max-width: 650px;
+  text-align: left;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.containerColumn {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.containerColumnLeft {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: left;
+  flex-wrap: wrap;
+  max-width: 650px;
+  padding-bottom: 50px;
+}
+
+.containerColumnLeftTitle {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: left;
+  padding: 10px;
+}
+
+.subtitle {
+  max-width: 600px;
+  text-align: left;
+  font-size: 12pt;
+  font-style: italic;
+  padding: 5px;
+  margin: 0;
+}
+
+.containerRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 10px;
+}
+
+.containerRowWrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+figure {
+  margin:3px;
+  margin-bottom: 0;
+}
+
+.buttonGeneral {
+  text-decoration: none;
+  width: 100px;
+  height: 30px;
+  background-color:#224874;
+  color: white;
+  border-radius: 15px;
+  border: white;
+}
+
+.buttonGeneral:hover {
+  background-color:#346fb3;
+}
+
+
