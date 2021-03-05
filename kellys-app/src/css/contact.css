@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 .formLeft {
+    font-family: 'Inter', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -8,14 +9,17 @@
 }
 
 .formLeft input {
+    font-family: 'Inter', sans-serif;
     margin-bottom: 20px;
 }
 
 .formLeft select {
+    font-family: 'Inter', sans-serif;
     margin-bottom: 20px;
 }
 
 .formLeft textarea {
+    font-family: 'Inter', sans-serif;
     margin-bottom: 20px;
 }
 

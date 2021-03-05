@@ -1,13 +1,13 @@
 import React from 'react';
-import Navigation from './navigation';
+import Navigation from '../shared/navigation';
 
-import '../css/resume.css';
-import SIMPLIILogo from '../images/icons/simplii-financial.png'
-import TDLogo from '../images/icons/TD-icon.png'
-import PEPSICOLogo from '../images/icons/pepsico-symbol.png'
-import MCMASTERLogo from '../images/icons/mcmaster-logo.png'
-import WATERLOOLogo from '../images/icons/waterloo-logo.png'
-import CIBCLogo from '../images/icons/cibc-logo.jpg'
+import '../../css/resume.css';
+import SIMPLIILogo from '../../images/icons/simplii-financial.png'
+import TDLogo from '../../images/icons/TD-icon.png'
+import PEPSICOLogo from '../../images/icons/pepsico-symbol.png'
+import MCMASTERLogo from '../../images/icons/mcmaster-logo.png'
+import WATERLOOLogo from '../../images/icons/waterloo-logo.png'
+import CIBCLogo from '../../images/icons/cibc-logo.jpg'
  
 const Resume = () => {
     return (

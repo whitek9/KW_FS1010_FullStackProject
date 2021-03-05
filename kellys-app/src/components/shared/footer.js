@@ -1,7 +1,7 @@
 import React from 'react';
 
-import LILogo from '../images/icons/linkedin.png'
-import IGLogo from '../images/icons/instagram.png'
+import LILogo from '../../images/icons/linkedin.png'
+import IGLogo from '../../images/icons/instagram.png'
  
 const Footer = () => {
     return (

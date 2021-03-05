@@ -12,9 +12,9 @@
 
 ## Phase Three - React with Backend 
 
-- [ ] Use the `useState` React hook in order to store your contact form's state.
+- [x] Use the `useState` React hook in order to store your contact form's state.
 
-- [ ] Make a successful AJAX request ( `POST /contact_form/entries` ) from the Contact Us React component that displays a success and error notification upon form submission. 
+- [x] Make a successful AJAX request ( `POST /contact_form/entries` ) from the Contact Us React component that displays a success and error notification upon form submission. 
 
 - [ ] Add a new page for your React application, which upon a successful submission to your login     route ( `POST /auth` ), the token received will be used to gain access to protected pages in React. Error messages should be displayed appropriately on screen. 
 

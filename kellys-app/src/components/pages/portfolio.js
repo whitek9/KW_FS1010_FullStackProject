@@ -1,23 +1,23 @@
 import React from 'react';
-import Navigation from './navigation';
+import Navigation from '../shared/navigation';
 
-import '../css/portfolio.css'
+import '../../css/portfolio.css'
 
-import Zoe1 from '../images/PortfolioImages/Zoe/Zoe1.jpg'
-import Zoe2 from '../images/PortfolioImages/Zoe/Zoe2.jpg'
-import Zoe3 from '../images/PortfolioImages/Zoe/Zoe3.jpg'
-import Zoe4 from '../images/PortfolioImages/Zoe/Zoe4.jpg'
-import Zoe5 from '../images/PortfolioImages/Zoe/Zoe5.jpg'
-import Zoe6 from '../images/PortfolioImages/Zoe/Zoe6.jpg'
+import Zoe1 from '../../images/PortfolioImages/Zoe/Zoe1.jpg'
+import Zoe2 from '../../images/PortfolioImages/Zoe/Zoe2.jpg'
+import Zoe3 from '../../images/PortfolioImages/Zoe/Zoe3.jpg'
+import Zoe4 from '../../images/PortfolioImages/Zoe/Zoe4.jpg'
+import Zoe5 from '../../images/PortfolioImages/Zoe/Zoe5.jpg'
+import Zoe6 from '../../images/PortfolioImages/Zoe/Zoe6.jpg'
 
-import Cottage from '../images/PortfolioImages/Personal/Cottage.jpg'
-import FallenTree from '../images/PortfolioImages/Personal/FallenTree.jpg'
-import FarmMeadow from '../images/PortfolioImages/Personal/FarmMeadow.jpg'
-import OldManRiver from '../images/PortfolioImages/Personal/OldManRiver.jpg'
-import SafetyFirst from '../images/PortfolioImages/Personal/SafetyFirst.jpg'
-import Storm from '../images/PortfolioImages/Personal/Storm.jpg'
+import Cottage from '../../images/PortfolioImages/Personal/Cottage.jpg'
+import FallenTree from '../../images/PortfolioImages/Personal/FallenTree.jpg'
+import FarmMeadow from '../../images/PortfolioImages/Personal/FarmMeadow.jpg'
+import OldManRiver from '../../images/PortfolioImages/Personal/OldManRiver.jpg'
+import SafetyFirst from '../../images/PortfolioImages/Personal/SafetyFirst.jpg'
+import Storm from '../../images/PortfolioImages/Personal/Storm.jpg'
 
-import Paddlenaut from '../images/PortfolioImages/Projects/Paddlenaut.png'
+import Paddlenaut from '../../images/PortfolioImages/Projects/Paddlenaut.png'
  
 const Portfolio = () => {
     return (

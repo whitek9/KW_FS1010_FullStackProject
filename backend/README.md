@@ -15,4 +15,4 @@ This project will build a backend application that will consist of a RESTful JSO
     - On a new line, enter 'USERS_PATH=./data/example.json' and replace 'example' with the name for your **USERS** database
     -  On a new line, enter 'ENTRIES_PATH=./data/example.json' and replace 'example' with the name for your **ENTRIES** database
 
-4. Run `nodemon` and `dotenv/config` by running `$ npm run dev` - this will get the server started (and keep it running) and configure `dotenv` to allow the application to use the global variables you set up in step 2.
+4. Run `nodemon` and `dotenv/config` by running `$ npm run dev` - this will get the server started (and keep it running) and configure `dotenv` to allow the application to use the global variables you set up in step 3.

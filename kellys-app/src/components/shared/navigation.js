@@ -11,6 +11,7 @@ const Navigation = () => {
                     <li> <NavLink to="/portfolio">PORTFOLIO</NavLink> </li>
                     <li> <NavLink to="/resume">RÉSUMÉ</NavLink> </li>
                     <li> <NavLink to="/contact">CONTACT</NavLink> </li>
+                    <li> <NavLink to="/login">LOGIN</NavLink></li>
                 </ul>
             </nav>
        </header>

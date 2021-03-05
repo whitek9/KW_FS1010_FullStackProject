@@ -9,7 +9,7 @@ const nameCheck = (validationObj) => {
 
 const emailCheck = (validationObj) => {
     
-    let emailRegex = new RegExp("^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$")
+    let emailRegex = new RegExp(/^[a-zA-Z0-9.!#$%&*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)+$/g)
     
     if (!emailRegex.test(validationObj.email)) {
 
@@ -39,7 +39,6 @@ const passwordCheck = (validationObj) => {
     let passwordRegex = new RegExp("^[A-Za-z0-9@$!%*?&]{8,}$")
 
     // Added 'undefined' check since the first check was running the regex test on 'undefined' as a string and letting it pass, sending through the object without a password. I think this is limitation of my validation architecture, but I think is still cleaner/more dynamic than what I submitted with Part 2.
-
     if (!passwordRegex.test(validationObj.password) || validationObj.password == undefined) {
        
         return 'password'
