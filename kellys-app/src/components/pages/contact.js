@@ -4,28 +4,33 @@ import Navigation from '../shared/navigation';
 import '../../css/contact.css';
 
 const Contact = () => {
-
+// formSubmit function leveraged from example-master file provided in the sample from the course material
     const [name, setName] = useState("")
     const [phoneNumber, setPhoneNumber] = useState("")
     const [email, setEmail] = useState("")
     const [content, setContent] = useState("")
 
+    
     const formSubmit = async event => {
         event.preventDefault()
-        const response = await fetch('http://localhost:4000/contact_form/entries', {
+        const response = await fetch('http://localhost:4000/contact_form/entries', {    
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
-              },
+                },
             body: JSON.stringify({name, email, phoneNumber, content})
         })
         const payload = await response.json()
         if (response.status >= 400) {
             alert(`Oops! Error: ${payload.message} for fields: ${payload.invalid.join(",")}`)
         } else {
-            alert(`Congrats! Submission submitted with id: ${payload.id}`)
+            alert(`Thanks for your message! I'll be in touch soon`)
         }
+        setName('')
+        setPhoneNumber('')
+        setEmail('')
+        setContent('')
     }
 
     return (
@@ -36,17 +41,16 @@ const Contact = () => {
                 <form className="formLeft" name="contactForm" onSubmit={formSubmit}>
                     <label htmlFor="name">Your Name</label>
                     <input 
-                        id="nameEntry"
                         name="name"
                         type="text" 
                         required 
                         value={name} 
-                        onChange={e => setName(e.target.value) } 
+                        onChange={e => setName(e.target.value)}
+                        autoFocus 
                     />
 
                     <label htmlFor="phoneNumber">Phone Number</label>
                     <input 
-                        id="phoneNumberEntry"
                         name="phoneNumber" 
                         type="tel" 
                         placeholder="(xxx) xxx-xxxx" 
@@ -57,7 +61,6 @@ const Contact = () => {
 
                     <label htmlFor="Email">Email Address</label>
                     <input 
-                        id="emailEntry"
                         name="email" 
                         type="email" 
                         placeholder="yourname@domain.com" 
@@ -68,7 +71,6 @@ const Contact = () => {
 
                     <label htmlFor="content">Write your message below</label>
                     <textarea 
-                        id="contentEntry"
                         name="content"
                         className="textAreaFormatted" 
                         rows={10} 

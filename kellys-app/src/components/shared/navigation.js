@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
  
 const Navigation = () => {
     return (
-       <header>
+       <header className='sticky'> 
             <h3> <NavLink to="/">Kelly White</NavLink> </h3>
             <nav className="navigation" id="navigation">
                 <ul>

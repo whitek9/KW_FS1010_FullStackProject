@@ -1,7 +1,6 @@
 import React from 'react';
 
-import LILogo from '../../images/icons/linkedin.png'
-import IGLogo from '../../images/icons/instagram.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
  
 const Footer = () => {
     return (
@@ -9,12 +8,12 @@ const Footer = () => {
             <ul>
                 <li> 
                     <a href="https://www.linkedin.com/in/kellyscottwhite">
-                        <img src={LILogo} alt='LinkedIn Logo' height="30px" width="30px" />
+                        <FontAwesomeIcon icon={['fab', 'linkedin']} />
                     </a> 
                 </li>
                 <li> 
                     <a href="https://www.instagram.com/kellyscottw/">
-                        <img src={IGLogo} alt='Instagram Logo' height="30px" width="30px" />
+                        <FontAwesomeIcon icon={['fab', 'instagram']} />
                     </a> 
                 </li>
             </ul>

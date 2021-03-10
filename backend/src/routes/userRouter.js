@@ -62,7 +62,9 @@ userRouter.post('/auth', async (req, res) => {
 
     if (existingUser == null) {
         
-        return res.status(400).json( { message: 'There is no user with that email registered' } )     
+        return res
+        .status(400)
+        .json( { message: 'There is no user with that email registered! Contact the site owner to register' } )     
     }
 
     // Then check if password from request matches the existing user's password
@@ -70,7 +72,7 @@ userRouter.post('/auth', async (req, res) => {
     bcrypt.compare(req.body.password, existingUser.password, function (err, result) {
 
         if (!result) {
-            return res.status(401).json( { message: 'Incorrect credentials provided' } )
+            return res.status(401).json( { message: 'Incorrect credentials provided, please try again' } )
         }
 
         else if (result) {

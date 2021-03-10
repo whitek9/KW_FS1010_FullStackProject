@@ -8,12 +8,13 @@ const home = () => {
         <main className="containerColumn">
             <section className="homeTitle">
                 <h1>KELLY S. WHITE</h1>
-                <nav className="homeNavigation">
+                <nav className="homeNavigation sticky">
                     <ul>
                         <li> <a href="#about">ABOUT</a> </li>
                         <li> <NavLink to="/portfolio">PORTFOLIO</NavLink></li>
                         <li> <NavLink to="/resume">RÉSUMÉ</NavLink></li>
                         <li> <NavLink to="/contact">CONTACT</NavLink> </li>
+                        <li> <NavLink to="/login">LOGIN</NavLink></li>
                     </ul>
                 </nav>
             </section>

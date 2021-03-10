@@ -19,10 +19,12 @@
     display: inline;
 }
 .homeNavigation ul li a {
+    border-radius: 1em;
     text-decoration: none;
     color: white;
     padding: 5px;
 }
 .homeNavigation ul li a:hover {
+    transition: .2s;
     background-color: #7e7373b7;
 }

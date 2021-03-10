@@ -1,10 +1,13 @@
 import express from 'express'
+import cors from 'cors'
 import contactFormRouter from './src/routes/contactFormRouter'
 import userRouter from './src/routes/userRouter'
 import errorHandler from "./src/middleware/errorHandler"
 
 const app = express()
 const PORT = process.env.PORT || 3000
+
+app.use(cors())
 
 app.use(express.json())
 
