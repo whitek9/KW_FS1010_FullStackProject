@@ -15,8 +15,7 @@ import Portfolio from './components/pages/portfolio';
 import Resume from './components/pages/resume';
 import Contact from './components/pages/contact';
 import LoginPage from './components/pages/login';
-import Submissions from './components/pages/submissions';
-import AdminPage from './components/pages/admin';
+import AdminPage from './components/pages/adminPages/admin';
 import SecureRoute from './components/shared/secureRoute';
 import Navigation from './components/shared/navigation'
 import Footer from './components/shared/footer';
@@ -33,14 +32,10 @@ function App() {
           <Route path='/resume' component={Resume}/>
           <Route path='/contact' component={Contact}/>  
           <Route path='/login' component={LoginPage}/>
-          <SecureRoute path="/admin/submissions">
-            <Navigation />
-            <Submissions />
-          </SecureRoute>       
           <SecureRoute path="/admin">
             <Navigation />
             <AdminPage />
-          </SecureRoute> 
+          </SecureRoute>      
           <Route component={Error}/>
         </Switch>
         <Footer />

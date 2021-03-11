@@ -24,13 +24,6 @@ const Portfolio = () => {
         <div className='componentContainer'>
             <Navigation />
             <main className="containerColumn">
-                {/* <nav className="inPageNav sticky">
-                    <ul>
-                        <li> <a href="#PortfolioIntro1">DOG PHOTOS</a> </li>
-                        <li> <a href="#PortfolioIntro2">LIFE PHOTOS</a> </li>
-                        <li> <a href="#PortfolioIntro3">PROJECTS</a> </li>
-                    </ul>
-                </nav> */}
                 <h4 id="PortfolioIntro1">I mainly take photos of my dog...</h4>
                 <section className="containerRowWrap" id="PortfolioImages1">
                     <figure className='galleryImage' >

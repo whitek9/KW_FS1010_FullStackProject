@@ -4,7 +4,9 @@ import Navigation from '../shared/navigation';
 import '../../css/contact.css';
 
 const Contact = () => {
-// formSubmit function leveraged from example-master file provided in the sample from the course material
+
+    // base formSubmit function leveraged from example-master file provided in the sample from the course material
+
     const [name, setName] = useState("")
     const [phoneNumber, setPhoneNumber] = useState("")
     const [email, setEmail] = useState("")
@@ -23,14 +25,15 @@ const Contact = () => {
         })
         const payload = await response.json()
         if (response.status >= 400) {
-            alert(`Oops! Error: ${payload.message} for fields: ${payload.invalid.join(",")}`)
+            alert(`Oops! Please enter a valid ${payload.invalid.join(",")}`)
         } else {
             alert(`Thanks for your message! I'll be in touch soon`)
+            setName('')
+            setPhoneNumber('')
+            setEmail('')
+            setContent('')
         }
-        setName('')
-        setPhoneNumber('')
-        setEmail('')
-        setContent('')
+        
     }
 
     return (

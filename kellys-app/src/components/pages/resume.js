@@ -6,6 +6,7 @@ import '../../css/resume.css';
 import SIMPLIILogo from '../../images/icons/simplii-financial.png'
 import TDLogo from '../../images/icons/TD-icon.png'
 import PEPSICOLogo from '../../images/icons/pepsico-symbol.png'
+import YORKLogo from '../../images/icons/york-logo.jpg'
 import MCMASTERLogo from '../../images/icons/mcmaster-logo.png'
 import WATERLOOLogo from '../../images/icons/waterloo-logo.png'
 import CIBCLogo from '../../images/icons/cibc-logo.jpg'
@@ -38,13 +39,6 @@ const Resume = () => {
         <div>
             <Navigation />
             <main className="containerColumn" id="inPageNav">
-                {/* <nav className="inPageNav sticky" id="navigation">
-                    <ul>
-                        <li> <a href="#WorkExperience">WORK EXPERIENCE</a> </li>
-                        <li> <a href="#Education">EDUCATION</a> </li>
-                        <li> <a href="#VolunteerExperience">VOLUNTEER EXPERIENCE</a> </li>
-                    </ul>
-                </nav> */}
                 <section className="containerColumnLeft" id="WorkExperience">
                     <h4>WORK EXPERIENCE</h4>
                     <div className="containerRow">
@@ -114,6 +108,24 @@ const Resume = () => {
                 </section>    
                 <section className="containerColumnLeft" id="Education">
                     <h4>Education</h4>
+                    <div className="containerRow">
+                        <img src={YORKLogo} alt='York Logo' height="auto" width="65px" />
+                        <div className="containerColumnLeftTitle">
+                            <h5 className="h5Left">Certificate in Full Stack Web Development, 2021</h5>
+                            <p className="subtitle">York University, Toronto, ON</p>
+                        </div>
+                        <span 
+                            className={yorkArrow ? 'clickableTitleClicked' : 'clickableTitle'}
+                            onClick = {() => {
+                                setYorkInfo(!yorkInfo)
+                                setYorkArrow(!yorkArrow)
+                            }}>
+                            <FontAwesomeIcon icon='arrow-right'/>    
+                        </span>
+                    </div>
+                    <ul className={yorkInfo ? "experienceListHidden" : 'experienceList'}>
+                        <li><a href='https://continue.yorku.ca/programs/certificate-in-full-stack-web-development/'>Check out the program here</a></li>
+                    </ul>
                     <div className="containerRow">
                         <img src={MCMASTERLogo} alt='McMaster Logo' height="auto" width="65px" />
                         <div className="containerColumnLeftTitle">
