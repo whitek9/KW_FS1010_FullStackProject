@@ -25,7 +25,8 @@ userRouter.post('/users', (req,res) => {
         id: uuidv4(),
         name: req.body.name,
         password: req.body.password,
-        email: req.body.email
+        email: req.body.email,
+        date: Date.now()
     }
 
     if (incorrectProperties.length) {

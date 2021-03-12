@@ -25,7 +25,8 @@ contactFormRouter.post('/contact_form/entries', (req, res) => {
         name: req.body.name,
         email: req.body.email,
         phoneNumber: req.body.phoneNumber,
-        content: req.body.content
+        content: req.body.content,
+        date: Date.now()
     }
     
     if (incorrectProperties.length) {

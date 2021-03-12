@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import Navigation from '../shared/navigation';
+import React, { useState } from 'react'
+import Navigation from '../shared/navigation'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Sidebar from '../shared/sidebar.js'
 
 import '../../css/resume.css';
 import SIMPLIILogo from '../../images/icons/simplii-financial.png'
@@ -13,6 +14,7 @@ import CIBCLogo from '../../images/icons/cibc-logo.jpg'
  
 const Resume = () => {
 
+    // Arrows for hiding job description content
     const [simpliiArrow, setSimpliiArrow] = useState(true)
     const [tdArrow, setTDArrow] = useState(true)
     const [pepsiArrow, setPepsiArrow] = useState(true)
@@ -23,7 +25,7 @@ const Resume = () => {
     const [CIBCArrow, setCIBCArrow] = useState(true)
 
 
-    
+    // Collapsible job description content
     const [simplii, setSimplii] = useState(true)
     const [tdInfo, setTDInfo] = useState(true)
     const [pepsiInfo, setPepsiInfo] = useState(true)
@@ -36,13 +38,14 @@ const Resume = () => {
        
     
     return (
-        <div>
+        <div id='outer-container'>
             <Navigation />
-            <main className="containerColumn" id="inPageNav">
-                <section className="containerColumnLeft" id="WorkExperience">
+            <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
+            <main className="containerColumn" id='page-wrap'>
+                <section className='containerColumnLeft' id='WorkExperience'>
                     <h4>WORK EXPERIENCE</h4>
-                    <div className="containerRow">
-                        <img src={SIMPLIILogo} alt ='Simplii Logo' height="auto" width="65px" />
+                    <div className='containerRow'>
+                        <img src={SIMPLIILogo} alt ='Simplii Logo' height='auto' width='65px' />
                         <div className="containerColumnLeftTitle">
                             <h5 className="h5Left">Consultant - Simplii Financial</h5>
                             <p className="subtitle">Canadian Imperial Bank of Commerce, Toronto ON, January 2018-Present</p>

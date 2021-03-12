@@ -1,5 +1,6 @@
 import React from 'react';
 import Navigation from '../shared/navigation';
+import Sidebar from '../shared/sidebar.js'
 
 import '../../css/portfolio.css'
 
@@ -21,9 +22,10 @@ import Paddlenaut from '../../images/PortfolioImages/Projects/Paddlenaut.png'
  
 const Portfolio = () => {
     return (
-        <div className='componentContainer'>
+        <div id="outer-container">
             <Navigation />
-            <main className="containerColumn">
+            <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
+            <main className="containerColumn" id="page-wrap">
                 <h4 id="PortfolioIntro1">I mainly take photos of my dog...</h4>
                 <section className="containerRowWrap" id="PortfolioImages1">
                     <figure className='galleryImage' >

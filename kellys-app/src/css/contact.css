@@ -6,11 +6,28 @@
     flex-direction: column;
     align-items: left;
     text-align: left;
+    width: 400px;
+}
+
+.formLeftSmall {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    width: 200px;
 }
 
 .formLeft input {
     font-family: 'Inter', sans-serif;
     margin-bottom: 20px;
+    max-width: 177px;
+}
+
+.formLeftSmall input {
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 20px;
+    max-width: 177px;
 }
 
 .formLeft select {

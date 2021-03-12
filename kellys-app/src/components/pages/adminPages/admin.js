@@ -1,6 +1,8 @@
 import React from 'react';
 import { Switch, Route, useRouteMatch, NavLink, useHistory } from 'react-router-dom';
 
+import Navigation from '../../shared/navigation';
+import Sidebar from '../../shared/sidebar.js'
 import Submissions from './submissions'
 import ManageUsers from './manageUsers'
 
@@ -19,13 +21,15 @@ const AdminPage = () => {
     }
 
     return (
-        <div>
-             <main class="containerColumn">
+        <div id='outer-container'>
+            <Navigation />
+            <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
+            <main class="containerColumn" id="page-wrap">
                 <h4>Administrator Portal</h4> 
                 <nav className='inPageNav'>
                     <ul>
-                        <li> <NavLink to="/admin/users">Manage Users</NavLink></li>
-                        <li> <NavLink to="/admin/submissions">Check Submissions</NavLink></li>
+                        <li> <NavLink to="/admin/users">Add Users</NavLink></li>
+                        <li> <NavLink to="/admin/submissions">Form Submissions</NavLink></li>
                         <li onClick={logout}>Logout</li>
                     </ul>
                 </nav>
@@ -37,7 +41,7 @@ const AdminPage = () => {
                         <Submissions />
                     </Route>
                 </Switch>
-             </main>
+            </main>
         </div>
      );
  }

@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
 import { useHistory, useLocation } from 'react-router-dom'
 import Navigation from '../shared/navigation';
+import Sidebar from '../shared/sidebar.js'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import '../../css/contact.css';
 
 const LoginPage = () => {
-// loginSubmit function leveraged from example-master file provided in the sample from the course material
+
+    // base loginSubmit function leveraged from example-master file provided in the sample from the course material
 
     let history = useHistory()
     let location = useLocation()
@@ -11,6 +16,7 @@ const LoginPage = () => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [auth, setAuth] = useState(true)
+    const [showPassword, setShowPassword] = useState(false)
 
     const loginSubmit = async event => {
         
@@ -36,16 +42,17 @@ const LoginPage = () => {
     }
 
     return (
-       <div>
+       <div id="outer-container">
             <Navigation />
-            <main class="containerColumn">
+            <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
+            <main class="containerColumn" id="page-wrap">
             {!auth && 
                 <div>
                     <p><span className='red' id='loginError'></span></p>
                 </div>
             }
             <h4>Log in</h4>
-                <form className="formLeft" name="loginForm" onSubmit={loginSubmit}>
+                <form className="formLeftSmall" name="loginForm" onSubmit={loginSubmit}>
                     <label htmlFor="Email">Email Address</label>
                         <input 
                             type="email" 
@@ -57,18 +64,29 @@ const LoginPage = () => {
                             autoFocus
                         />
                     <label htmlFor="Password">Password</label>
-                        <input 
-                            type="text" 
-                            name="name" 
-                            required 
-                            value={password} 
-                            onChange={e => setPassword(e.target.value)} 
-                        />
+                        <div className='containerRowLeft'>
+                            <input 
+                                type={showPassword ? 'text' : 'password'} 
+                                name="name" 
+                                required 
+                                value={password} 
+                                onChange={e => setPassword(e.target.value)} 
+                            />
+                            <span 
+                                title='Show Password'
+                                className='showPasswordIcon'
+                                onClick = {() => {
+                                    setShowPassword(!showPassword)
+                                }}>
+                                <FontAwesomeIcon icon='eye'/>    
+                            </span>
+                        </div>
                     <input 
                         type="submit" 
                         defaultValue="Sign In" 
                         className="buttonGeneral" 
                     />
+                    
                 </form>
             </main>
        </div>

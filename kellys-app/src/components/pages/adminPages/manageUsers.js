@@ -32,7 +32,7 @@ const ManageUsers = () => {
     return (
         <main className='containerColumn'>
             <h5>Add New User</h5>
-            <form className="formLeft" name="contactForm" onSubmit={formSubmit}>
+            <form className="formLeftSmall" name="contactForm" onSubmit={formSubmit}>
                 <label htmlFor="Name">Name</label>
                 <input 
                     name="name" 

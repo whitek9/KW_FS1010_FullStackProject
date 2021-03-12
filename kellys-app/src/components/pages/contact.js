@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Navigation from '../shared/navigation';
+import PhoneInput from 'react-phone-number-input/input'
+import Sidebar from '../shared/sidebar.js'
 
 import '../../css/contact.css';
 
@@ -37,12 +39,13 @@ const Contact = () => {
     }
 
     return (
-       <div>
+       <div id='outer-container'>
             <Navigation />
-            <main class="containerColumn">
+            <Sidebar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
+            <main class="containerColumn" id="page-wrap">
                 <h4>Get in touch with me!</h4>
                 <form className="formLeft" name="contactForm" onSubmit={formSubmit}>
-                    <label htmlFor="name">Your Name</label>
+                    <label htmlFor="name">Name</label>
                     <input 
                         name="name"
                         type="text" 
@@ -52,14 +55,15 @@ const Contact = () => {
                         autoFocus 
                     />
 
-                    <label htmlFor="phoneNumber">Phone Number</label>
-                    <input 
+                    <label htmlFor="phoneNumber">Phone Number (Canada or US only)</label>
+                    <PhoneInput
+                        country='US'
                         name="phoneNumber" 
                         type="tel" 
                         placeholder="(xxx) xxx-xxxx" 
                         required
                         value={phoneNumber} 
-                        onChange={e => setPhoneNumber(e.target.value) } 
+                        onChange={setPhoneNumber} 
                     />
 
                     <label htmlFor="Email">Email Address</label>
