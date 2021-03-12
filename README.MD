@@ -18,7 +18,7 @@ To get the project running:
 
 3. Added base Administrator Page `/admin` to provide base protected area with path to add other protected pages 
 
-4. Show/Hid password button on login page
+4. Show/Hide password button on login page
 
 5. Updated error messages to display on login page
 
